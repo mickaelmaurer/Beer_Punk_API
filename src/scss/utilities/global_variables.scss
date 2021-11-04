@@ -1,0 +1,30 @@
+// Font-face
+@font-face {
+  font-family: Druk Cond Super;
+  src: url("../fonts/Druk Cond Super.otf") format("opentype");
+}
+@font-face {
+  font-family: Druk Wide Super;
+  src: url("../fonts/Druk Wide Super.otf") format("opentype");
+}
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("../fonts/HelveticaNeueBold.otf") format("opentype");
+}
+@font-face {
+  font-family: HelveticaNeueRoman;
+  src: url("../fonts/HelveticaNeueRoman.otf") format("opentype");
+}
+
+// Fonts
+$main-font-regular: 14px "HelveticaNeueRoman";
+$main-font-bold: 14px "HelveticaNeueBold";
+$second-font-cond: 14px "Druk Cond Super";
+$second-font-wide: 14px "Druk Wide Super";
+
+// Colors
+$main-color: #000000; // black
+$second-color-1: #ffffff; // white
+$second-color-2: #d8d8d8; // grey
+$second-color-3: #ffcf00; // yellow
+$second-color-4: #cccccc; // light grey

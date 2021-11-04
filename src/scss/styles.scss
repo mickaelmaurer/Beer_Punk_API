@@ -1,0 +1,64 @@
+/* SCSS files */
+@import "utilities/global_variables";
+@import "library/modal_beer";
+@import "library/beers_list";
+@import "library/header";
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $second-color-1;
+  font: $main-font-regular;
+}
+
+h1,
+h3 {
+  margin: 0;
+  font: $second-font-cond;
+  font-size: 80px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+h4,
+.beer_tagline {
+  font: $main-font-bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+// Animations
+
+// Slide in right to left
+.slide_in {
+  animation-duration: 700ms;
+  animation-name: slide_in;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  left: 0%;
+}
+@keyframes slide_in {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+// Slide out left to right
+.slide_out {
+  animation-duration: 700ms;
+  animation-name: slide_out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  left: 100%;
+}
+@keyframes slide_out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}

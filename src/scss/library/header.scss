@@ -1,0 +1,32 @@
+$nav-height: 120px;
+
+header {
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $nav-height;
+    width: 100%;
+    background-color: $second-color-1;
+    border-bottom: 1px solid $second-color-2;
+
+    .beer_icon {
+      font-size: 50px;
+      text-align: right;
+    }
+    * {
+      // Spacing all nav elements
+      margin: 0 60px;
+      width: 30px; // Bad fast fix to center
+    }
+  }
+}
+
+// Ajustement to avoid nav overflow
+#main_content,
+.modal_content {
+  margin-top: $nav-height;
+}

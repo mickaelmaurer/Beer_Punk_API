@@ -1,0 +1,83 @@
+#modal_beer {
+  display: none;
+
+  .modal_content {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: $second-color-1;
+
+    #modal_left_content {
+      .beer_name {
+        // @TODO: Afficher le nom de la bière en arrière plan
+        display: none;
+      }
+      .beer_img {
+        display: block;
+        max-height: 895px;
+        margin: auto;
+      }
+    }
+    #modal_right_content {
+      border-left: 1px solid $second-color-2;
+
+      .description_container,
+      .specifications_container,
+      .ingredients_container {
+        max-width: 480px;
+        padding: 0 15px;
+        margin: auto;
+      }
+      .beer_tagline {
+        margin-top: 15px;
+      }
+      .beer_description {
+        line-height: 22px;
+        margin-top: 45px;
+        margin-bottom: 80px;
+      }
+      .title_list {
+        color: $second-color-4;
+      }
+      .specifications_list,
+      .ingredients_list {
+        padding-left: 0;
+      }
+      .specifications_list {
+        border-bottom: 1px solid $second-color-2;
+      }
+      .list_element {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        line-height: 22px;
+        border-top: 1px solid $second-color-2;
+
+        .list_element_name {
+          font: $main-font-bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+    #modal_left_content,
+    #modal_right_content {
+      padding-top: 50px;
+      width: 50%;
+    }
+  }
+}
+
+nav #close_modal_beer {
+  display: none;
+  transform: rotate(45deg);
+  font-size: 70px;
+  cursor: pointer;
+  &:hover {
+    color: $second-color-3;
+  }
+}
